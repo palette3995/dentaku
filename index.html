@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="utf-8">
@@ -11,43 +11,42 @@
        <form name="dentaku">
         <table>
           <tr>
-            <td colspan="4">
-              <input type="text" name="display" class="display" value="" disabled/>
-            </td>
+            <td colspan="4" id="window"></td>
           </tr>
           
           <tr>
-            <td><input type="button" value="7" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="8" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="9" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="+" class="operator" onclick="get_calc(this)"/></td>
+           <td><button type="button" onclick="clickButton(this)">7</button></td>
+           <td><button type="button" onclick="clickButton(this)">8</button></td>
+           <td><button type="button" onclick="clickButton(this)">9</button></td>
+           <td><button type="button" onclick="clickButton(this)">+</button></td>
           </tr>
           
           <tr>
-            <td><input type="button" value="4" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="5" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="6" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="-" class="operator" onclick="get_calc(this)"/></td>
+           <td><button type="button" onclick="clickButton(this)">4</button></td>
+           <td><button type="button" onclick="clickButton(this)">5</button></td>
+           <td><button type="button" onclick="clickButton(this)">6</button></td>
+           <td><button type="button" class="operator" onclick="clickButton(this)">-</button></td>
           </tr>
           
           <tr>
-            <td><input type="button" value="1" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="2" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="3" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="*"class="operator" onclick="get_calc(this)"/></td>
+           <td><button type="button" onclick="clickButton(this)">1</button></td>
+           <td><button type="button" onclick="clickButton(this)">2</button></td>
+           <td><button type="button" onclick="clickButton(this)">3</button></td>
+           <td><button type="button" onclick="clickButton(this)">*</button></td>
           </tr>
           
           <tr>
-            <td><input type="button" value="0" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="00" onclick="get_calc(this)"/></td>
-            <td><input type="button" value="." onclick="get_calc(this)"/></td>
-            <td><input type="button" value="/" class="operator" onclick="get_calc(this)"/></td>
+           <td><button type="button" onclick="clickButton(this)">0</button></td>
+           <td><button type="button" onclick="clickButton(this)">00</button></td>
+           <td><button type="button" onclick="clickButton(this)">.</button></td>
+           <td><button type="button" onclick="clickButton(this)">/</button></td>
           </tr>
-          
+
           <tr>
-            <td colspan="2"><input type="button" value="AC" class="reset" onclick="get_calc(this)"/></td>
-            <td colspan="2"><input type="button" value="=" class="equal" onclick="get_calc(this)"/></td>
+           <td colspan="2"><button class="underButtons" type="button" onclick="clickButton(this)">AC</button></td>
+           <td colspan="2"><button class="underButtons" type="button" onclick="clickButton(this)">=</button></td>
           </tr>
+
         </table>
        </form>
       <script src="main.js"></script>
